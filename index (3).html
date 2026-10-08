@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<title>Nespon Solutions - Chat With Us</title>
+<style>
+body{margin:0;background:#0F2A3D;color:#fff;font-family:Arial,sans-serif}
+.wrap{max-width:720px;margin:0 auto;padding:64px 24px}
+.logo{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:12px;background:#FFC857;color:#0F2A3D;font-weight:bold;font-size:26px}
+h1{font-size:44px;line-height:1.1;margin:32px 0 16px}
+p{font-size:20px;line-height:1.5;color:#D5E2EC}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="logo">N</div>
+<h1>Chat with Nespon Solutions</h1>
+<p>Have a question? Click the chat bubble at the bottom right of this page and send us a message. Our team will get back to you within one business day.</p>
+</div>
+
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DjV000001kHJv',
+				'Nespon_Chat_Live',
+				'https://orgfarm-0e05021509-dev-ed.develop.my.site.com/ESWNesponChatLive1791451641258',
+				{
+					scrt2URL: 'https://orgfarm-0e05021509-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://orgfarm-0e05021509-dev-ed.develop.my.site.com/ESWNesponChatLive1791451641258/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+</body>
+</html>
